@@ -132,3 +132,8 @@ export default function Home() {
         </>
     )
 }
+
+//@ts-ignore
+global.performance = global.performance || {
+    now: () => new Date().getTime(),
+  };
